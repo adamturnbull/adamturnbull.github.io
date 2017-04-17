@@ -1,0 +1,5 @@
+name: Adam Turnbull, Product Manager
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
