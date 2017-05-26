@@ -1,69 +1,202 @@
-body {
-  font-weight: 200;
-  color: rgb(200,200,200);
+@font-face {
+  font-family: 'Charter';
+  src: url('../fonts/charter_regular-webfont.eot');
+  src: url('../fonts/charter_regular-webfont.ttf') format('truetype'),
+        url('../fonts/charter_regular-webfont.woff') format('woff');
+  font-weight: normal,400;
+  font-style: normal;
 }
 
-#intro h1 {
+body {
   font-weight: 200;
-  color: rgb(200,200,200);
 }
 
 p {
-  font-weight: 200;
-  font-size: 125%;
-  color: rgb(90,90,90);
+  font-family: 'Charter', 'Georgia', serif;
+  font-size: 20px;
+  color: rgb(120,120,120);
+  line-height: 32px;
+  margin-top: 32px;
 }
 
-#intro .col {
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 130%;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  color: rgb(50,50,50);
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0 10px 0;
+}
+
+h3 {
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+/* Intro appears only on home page */
+.intro {
   padding-top: 50px;
-  padding-bottom: 500px;
 }
 
-#intro {
-  background-color: rgb(61,64,69);
-  background-image: url(../img/adam-screens.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
+#avatar {
+  border-radius: 50%;
+}
+/* End homepage intro */
+
+/* Navbar appears only on content pages */
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.navbar-default {
+  background-color: unset;
+  border: none;
+}
+
+.navbar-default li {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: rgb(50,50,50);
+}
+/* End navbar styles */
+
+/* Footer appears on all pages */
+  footer {
+    margin-top: 100px;
+    background-color: #2a2730;
+  }
+
+  .footer-nav {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer-brand {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-nav>li {
+    color: rgb(200,200,200);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .footer-nav a {
+    color: rgb(200,200,200);
+    letter-spacing: 1.5px;
+  }
+
+  i.fa {
+    padding-right: 5px;
+  }
+
+/* End footer styles*/
+
+/* Hero is the image that appears on case study pages */
+.hero {
+  margin-bottom: 50px;
+}
+/* End hero styles */
+
+mark {
+  display: inline-block;
+  background: rgba(0,173,0,0.3);
+  padding-left: 3px;
+  padding-right: 3px;
+  color: rgb(100,100,100);
+}
+
+/* Homepage styles */
+
+.homepage-hero {
+  padding-bottom: 100px;
+}
+
+.homepage-row {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .mid-grey {
   background-color: rgb(241,241,241);
 }
 
-h1, h2 {
-  color: rgb(90,90,90);
-  font-weight: 200;
+.read-more {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(50,50,50);
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* End homepage styles */
+
+/* Blinking cursor on homepage */
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+/* End blinking cursor on homepage */
+
+
+#contact a {
+  font-weight: 300;
   line-height: 130%;
+  font-size: 24px;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  color: rgb(50,50,50);
+  letter-spacing: 1px;
 }
 
-.col {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.vertical-line {
+    background: #313131;
+    display: block;
+    width: 1px;
+    margin: 20px auto;
+    height: 30px;
+    opacity: .3;
 }
 
-.logos {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.employer-logo {
-  max-width: 100%;
-}
-
-.employer-logo.rail-europe {
-  max-height: 60px;
-}
-
-.school-logo {
-  max-width: 100%;
-}
-
-.school-logo.oxford {
-  max-height: 100px;
-}
-
-.school-logo.balliol {
-  padding-top: 15px;
-  max-height: 90px;
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #313131;
+  color: #313131;
+  padding: 10px 10px 10px 8px;
 }
