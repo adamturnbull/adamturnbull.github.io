@@ -1,5 +1,6 @@
 name: Adam Turnbull, Product Director
 markdown: kramdown
+repository: adamturnbull/adamturnbull.github.io
 
 gems:
   - jekyll-sitemap
