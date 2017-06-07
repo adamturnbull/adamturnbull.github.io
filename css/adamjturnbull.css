@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 24px;
   margin: 5px 0 5px 0;
 }
 
@@ -61,8 +61,6 @@ h3 {
   .intro {
     padding-top: 50px;
   }
-}
-
 
 #avatar {
   border-radius: 50%;
@@ -71,8 +69,8 @@ h3 {
 
 /* Navbar appears only on content pages */
 .navbar {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -101,8 +99,14 @@ h3 {
 
 /* Footer appears on all pages */
   footer {
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: #2a2730;
+  }
+
+  @media (min-width: 768px) {
+    footer {
+      margin-top: 100px;
+    }
   }
 
   .footer-nav {
@@ -154,12 +158,25 @@ mark {
 /* Homepage styles */
 
 .homepage-hero {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .homepage-hero {
+    padding-bottom: 100px;
+  }
 }
 
 .homepage-row {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .homepage-row {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .mid-grey {
