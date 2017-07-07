@@ -172,6 +172,19 @@ mark {
   color: rgb(100,100,100);
 }
 
+img.inline {
+  padding-top: 30px;
+}
+
+.image-caption {
+  padding-bottom: 30px;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
 /* Homepage styles */
 
 .homepage-hero {
