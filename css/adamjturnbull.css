@@ -72,8 +72,18 @@ h3 {
   padding-top: 20px;
 }
 
+.avatar {
+  padding-top: 20px;
+}
+
 @media (min-width: 768px) {
   .intro {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatar {
     padding-top: 50px;
   }
 }
